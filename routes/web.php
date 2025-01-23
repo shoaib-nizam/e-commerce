@@ -9,3 +9,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/','index')->name('index');
 Route::view('/shop','shop')->name('shop');
+Route::view('/product','product-details')->name('product');
