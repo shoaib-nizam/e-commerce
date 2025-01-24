@@ -20,3 +20,4 @@ Route::view('/contact','contact')->name('contact');
 
 Route::view('/login','admin-panel/login')->name('login');
 Route::view('/register','admin-panel/register')->name('signup');
+Route::view('/dashboard','admin-panel/layouts/dashboard_app')->name('dashboard');
