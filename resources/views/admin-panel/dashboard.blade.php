@@ -1,0 +1,1 @@
+@extends('admin-panel.layouts.dashboard_app')

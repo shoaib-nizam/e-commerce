@@ -18,6 +18,6 @@ Route::view('/contact','contact')->name('contact');
 
 //admin panel route
 
-Route::view('/login','admin-panel/login')->name('login');
+Route::view('/admin','admin-panel/login')->name('login');
 Route::view('/register','admin-panel/register')->name('signup');
-Route::view('/dashboard','admin-panel/layouts/dashboard_app')->name('dashboard');
+Route::view('/dashboard','admin-panel/dashboard')->name('dashboard');
