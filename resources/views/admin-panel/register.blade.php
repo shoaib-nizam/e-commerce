@@ -16,7 +16,7 @@
                 <div class="card">
                     <h5 class="card-header">Sign Up Form</h5>
                     <div class="card-body">
-                        <form action="{{ route('register') }}" method="POST">
+                        <form action="{{ route('register') }}" method="POST" autocomplete="off">
                             @csrf
                         <div class="mt-3">
                         <input class="form-control" type="text" placeholder="User Name" name="name" aria-label="default input example">

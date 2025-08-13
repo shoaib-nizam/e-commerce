@@ -17,7 +17,7 @@ class RegisterController extends Controller
         $reg->email = $req->email;
         $reg->password = Hash::make($req->pass); // password encrypt
         $reg->save();
-
+        return redirect()->route('login');
 
     }
 

@@ -20,10 +20,7 @@ Route::view('/testimonial','testimonial')->name('testimonial');
 Route::view('/contact','contact')->name('contact');
 
 //admin panel route
-
-Route::view('/admin','admin-panel/login')->name('login');
+Route::view('/loginform','admin-panel/login')->name('login');
 Route::view('/signup','admin-panel/register')->name('signup');
 Route::view('/dashboard','admin-panel/dashboard')->name('dashboard');
-
-
 Route::post('/register', [RegisterController::class,'register'])->name('register');
