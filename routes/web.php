@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\Auth\RegisterController;
+
+
 // Route::get('/', function () {
 //     return view('welcome');
 // });
@@ -19,5 +22,8 @@ Route::view('/contact','contact')->name('contact');
 //admin panel route
 
 Route::view('/admin','admin-panel/login')->name('login');
-Route::view('/register','admin-panel/register')->name('signup');
+Route::view('/signup','admin-panel/register')->name('signup');
 Route::view('/dashboard','admin-panel/dashboard')->name('dashboard');
+
+
+Route::post('/register', [RegisterController::class,'register'])->name('register');

@@ -16,17 +16,18 @@
                 <div class="card">
                     <h5 class="card-header">Sign Up Form</h5>
                     <div class="card-body">
-                        <form action="">
+                        <form action="{{ route('register') }}" method="POST">
+                            @csrf
                         <div class="mt-3">
-                        <input class="form-control" type="text" placeholder="User Name" aria-label="default input example">
+                        <input class="form-control" type="text" placeholder="User Name" name="name" aria-label="default input example">
                     </div>
 
                     <div class="mt-3">
-                        <input class="form-control" type="email" placeholder="User Email" aria-label="default input example">
+                        <input class="form-control" type="email" placeholder="User Email" name="email" aria-label="default input example">
                     </div>
 
                     <div class="mt-3">
-                        <input class="form-control" type="password" placeholder="User Password" aria-label="default input example">
+                        <input class="form-control" type="password" placeholder="User Password" name="pass" aria-label="default input example">
                     </div>
 
                     <div class="mt-3">
