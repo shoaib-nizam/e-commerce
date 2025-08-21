@@ -16,18 +16,19 @@
                 <div class="card">
                     <h5 class="card-header">Sign Up Form</h5>
                     <div class="card-body">
-                        <form action="{{ route('register') }}" method="POST" autocomplete="off">
+
+                        <form id="register">
                             @csrf
                         <div class="mt-3">
-                        <input class="form-control" type="text" placeholder="User Name" name="name" aria-label="default input example">
+                        <input class="form-control" type="text" placeholder="User Name" name="name" id="name" aria-label="default input example">
                     </div>
 
                     <div class="mt-3">
-                        <input class="form-control" type="email" placeholder="User Email" name="email" aria-label="default input example">
+                        <input class="form-control" type="email" placeholder="User Email" name="email" id="email" aria-label="default input example">
                     </div>
 
                     <div class="mt-3">
-                        <input class="form-control" type="password" placeholder="User Password" name="pass" aria-label="default input example">
+                        <input class="form-control" type="password" placeholder="User Password" name="pass" id="pass" aria-label="default input example">
                     </div>
 
                     <div class="mt-3">
@@ -35,6 +36,8 @@
                         <a class="btn btn-info" href="{{route('login')}}">Log in</a>
                     </div>
                 </form>
+
+                <div id="message" style="display:none;"></div>
                     </div>
                 
                   </div>
@@ -42,6 +45,9 @@
             </div>
         </div>
     </div>
+
+    <script src="{{ asset('js/jquery.js') }}"></script>
+
 
    
 

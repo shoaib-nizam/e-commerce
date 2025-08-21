@@ -11,13 +11,11 @@ class RegisterController extends Controller
 {
     function register(Request $req){
 
-        // return $req;
-        $reg = new Register;
-         $reg->name = $req->name;
-        $reg->email = $req->email;
-        $reg->password = Hash::make($req->pass); // password encrypt
-        $reg->save();
-        return redirect()->route('login');
+             Register::create([
+            'name' => $req->name,
+            'email' => $req->email,
+            'password' => $req->pass,
+        ]);
 
     }
 
